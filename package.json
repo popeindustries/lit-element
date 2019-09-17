@@ -1,0 +1,59 @@
+{
+  "name": "@popeindustries/lit-element",
+  "version": "1.0.0-beta.1",
+  "description": "Seamlessly render lit-element custom elements on the server and in the browser",
+  "keywords": [
+    "custom elements",
+    "html template",
+    "lit-html",
+    "lit-html-server",
+    "tagged template literal",
+    "template",
+    "web components"
+  ],
+  "main": "index.js",
+  "module": "index.mjs",
+  "browser": {},
+  "repository": "https://github.com/popeindustries/lit-element.git",
+  "author": "Alexander Pope <alex@pope-industries.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@popeindustries/lit-html": "1.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "lit-element": "^2.2.1",
+    "prettier": "^1.17.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "format": "prettier --write './{src,test}/**/*.{js,json}'",
+    "lint": "eslint './{src,test}/**/*.js'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
