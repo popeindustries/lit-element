@@ -1,2 +1,5 @@
 .*
+*.config.js
+src
+test
 package-lock.json

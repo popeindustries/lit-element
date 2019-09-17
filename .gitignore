@@ -2,3 +2,5 @@
 .npm
 node_modules
 .DS_Store
+/index.js
+/index.mjs
