@@ -9,6 +9,7 @@ if (typeof globalThis.customElements === 'undefined') {
   globalThis.customElements = {
     /**
      * Retrieve the constructor by "name"
+     *
      * @param {string} name
      * @returns {Function|undefined}
      */
@@ -18,6 +19,7 @@ if (typeof globalThis.customElements === 'undefined') {
 
     /**
      * Register an element's "constructor" by tag "name"
+     *
      * @param {string} name
      * @param {Function} constructor
      * @param {object} options

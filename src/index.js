@@ -1,6 +1,7 @@
 import './polyfill.js';
-import { render } from '@popeindustries/lit-html';
+export { html, svg } from '@popeindustries/lit-html/index.mjs';
 
+export function css() {}
 export class LitElement {}
 
-LitElement.render = render;
+LitElement.render = function render() {};

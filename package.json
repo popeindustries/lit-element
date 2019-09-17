@@ -13,17 +13,21 @@
   ],
   "main": "index.js",
   "module": "index.mjs",
-  "browser": {},
+  "browser": {
+    "./index.js": "./browser/index.js",
+    "./index.mjs": "./browser/index.js"
+  },
   "repository": "https://github.com/popeindustries/lit-element.git",
   "author": "Alexander Pope <alex@pope-industries.com>",
   "license": "MIT",
   "dependencies": {
-    "@popeindustries/lit-html": "1.0.0-beta.1"
+    "@popeindustries/lit-html": "^1.0.0-beta.1"
   },
   "peerDependencies": {
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
+    "@popeindustries/lit-html-server": "^1.3.0",
     "babel-eslint": "^10.0.1",
     "chai": "^4.2.0",
     "eslint": "^6.1.0",

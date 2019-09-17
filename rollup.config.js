@@ -8,7 +8,7 @@ module.exports = [
       file: 'index.mjs',
       format: 'esm'
     },
-    external: ['@popeindustries/lit-html'],
+    external: ['stream', '@popeindustries/lit-html'],
     plugins: [commonjs(), resolve()]
   },
   {
@@ -17,7 +17,7 @@ module.exports = [
       file: 'index.js',
       format: 'cjs'
     },
-    external: ['@popeindustries/lit-html'],
+    external: ['stream', '@popeindustries/lit-html'],
     plugins: [commonjs(), resolve()]
   }
 ];
