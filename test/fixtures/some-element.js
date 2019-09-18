@@ -16,7 +16,13 @@ export class SomeElement extends LitElement {
 
   render() {
     return html`
-      <p>${this.data.text}</p>
+      <p>${this.data.text} ${this.renderHelper()}</p>
+    `;
+  }
+
+  renderHelper() {
+    return html`
+      <span>${this.data.othertext}</span>
     `;
   }
 }
