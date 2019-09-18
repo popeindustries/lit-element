@@ -1,6 +1,9 @@
 const commonjs = require('rollup-plugin-commonjs');
 const resolve = require('rollup-plugin-node-resolve');
 
+const external = ['stream', '@popeindustries/lit-html'];
+const plugins = [commonjs(), resolve()];
+
 module.exports = [
   {
     input: 'src/index.js',
@@ -8,8 +11,8 @@ module.exports = [
       file: 'index.mjs',
       format: 'esm'
     },
-    external: ['stream', '@popeindustries/lit-html'],
-    plugins: [commonjs(), resolve()]
+    external,
+    plugins
   },
   {
     input: 'src/index.js',
@@ -17,7 +20,25 @@ module.exports = [
       file: 'index.js',
       format: 'cjs'
     },
-    external: ['stream', '@popeindustries/lit-html'],
-    plugins: [commonjs(), resolve()]
+    external,
+    plugins
+  },
+  {
+    input: 'src/directives/render.js',
+    output: {
+      file: 'directives/render.mjs',
+      format: 'esm'
+    },
+    external,
+    plugins
+  },
+  {
+    input: 'src/directives/render.js',
+    output: {
+      file: 'directives/render.js',
+      format: 'cjs'
+    },
+    external,
+    plugins
   }
 ];

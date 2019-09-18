@@ -1,5 +1,5 @@
 import './polyfill.js';
-export { html, svg } from '@popeindustries/lit-html/index.mjs';
+export { html, svg } from '@popeindustries/lit-html';
 
 export function css() {}
 export class LitElement {}
