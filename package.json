@@ -1,6 +1,6 @@
 {
   "name": "@popeindustries/lit-element",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Seamlessly render lit-element custom elements on the server and in the browser",
   "keywords": [
     "custom elements",
