@@ -12,6 +12,7 @@ export class SomeElement extends LitElement {
 
   constructor() {
     super();
+    throw Error('no construct');
   }
 
   render() {

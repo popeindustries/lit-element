@@ -16,8 +16,8 @@
   "browser": {
     "./index.js": "./browser/index.js",
     "./index.mjs": "./browser/index.js",
-    "./directives/render.js": "./browser/directives/render.js",
-    "./directives/render.mjs": "./browser/directives/render.js"
+    "./directives/custom-element-render.js": "./browser/directives/custom-element-render.js",
+    "./directives/custom-element-render.mjs": "./browser/directives/custom-element-render.js"
   },
   "repository": "https://github.com/popeindustries/lit-element.git",
   "author": "Alexander Pope <alex@pope-industries.com>",

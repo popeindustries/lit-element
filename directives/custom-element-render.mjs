@@ -1,6 +1,6 @@
 import { directive, isNodePart } from '@popeindustries/lit-html';
 
-export const render = directive(renderDirective);
+const customElementRender = directive(customElementRenderDirective);
 
 /**
  * Render contents of LitElement component
@@ -8,7 +8,7 @@ export const render = directive(renderDirective);
  * @param { object } properties
  * @returns { (part: NodePart) => void }
  */
-function renderDirective(properties) {
+function customElementRenderDirective(properties) {
   return function(part) {
     if (!isNodePart(part)) {
       throw Error('The LitElement `render` directive can only be used in text nodes');
@@ -16,7 +16,7 @@ function renderDirective(properties) {
 
     const { tagName } = part;
     const constructor = globalThis.customElements.get(tagName);
-
+    console.log(tagName, constructor);
     if (
       constructor === undefined ||
       (constructor !== undefined && constructor.prototype.render === undefined)
@@ -25,9 +25,10 @@ function renderDirective(properties) {
     }
 
     try {
+      // Create instance without triggering potential side-effects in constructor
       const instance = Object.create(constructor.prototype);
 
-      for (const key of properties) {
+      for (const key in properties) {
         instance[key] = properties[key];
       }
 
@@ -36,6 +37,9 @@ function renderDirective(properties) {
       part.setValue(result);
     } catch (err) {
       console.log(err);
+      part.setValue(undefined);
     }
   };
 }
+
+export { customElementRender };

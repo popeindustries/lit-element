@@ -1,5 +1,5 @@
 import { directive } from '@popeindustries/lit-html';
 
-export const render = directive(() => (part) => {
+export const customElementRender = directive(() => (part) => {
   part.setValue(undefined);
 });

@@ -24,18 +24,18 @@ module.exports = [
     plugins
   },
   {
-    input: 'src/directives/render.js',
+    input: 'src/directives/custom-element-render.js',
     output: {
-      file: 'directives/render.mjs',
+      file: 'directives/custom-element-render.mjs',
       format: 'esm'
     },
     external,
     plugins
   },
   {
-    input: 'src/directives/render.js',
+    input: 'src/directives/custom-element-render.js',
     output: {
-      file: 'directives/render.js',
+      file: 'directives/custom-element-render.js',
       format: 'cjs'
     },
     external,

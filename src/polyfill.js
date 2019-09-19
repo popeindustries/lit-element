@@ -10,8 +10,8 @@ if (typeof globalThis.customElements === 'undefined') {
     /**
      * Retrieve the constructor by "name"
      *
-     * @param {string} name
-     * @returns {Function|undefined}
+     * @param { string } name
+     * @returns { Function|undefined }
      */
     get(name) {
       return registry.get(name);
@@ -20,9 +20,9 @@ if (typeof globalThis.customElements === 'undefined') {
     /**
      * Register an element's "constructor" by tag "name"
      *
-     * @param {string} name
-     * @param {Function} constructor
-     * @param {object} options
+     * @param { string } name
+     * @param { Function } constructor
+     * @param { object } options
      */
     define(name, constructor /* , options */) {
       if (!RE_VALID_NAME.test(name)) {
