@@ -85,7 +85,7 @@ http.createServer((request, response) => {
       </head>
       <body>
         <some-element stuff="${properties.stuff}">
-          ${customElementRender({ properties })}
+          ${customElementRender(properties)}
         </some-element>
       </body>
     </html>
