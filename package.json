@@ -19,6 +19,7 @@
     "./directives/custom-element-render.js": "./browser/directives/custom-element-render.js",
     "./directives/custom-element-render.mjs": "./browser/directives/custom-element-render.js"
   },
+  "types": "index.d.ts",
   "repository": "https://github.com/popeindustries/lit-element.git",
   "author": "Alexander Pope <alex@pope-industries.com>",
   "license": "MIT",
