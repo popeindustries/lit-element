@@ -1,3 +1,4 @@
+import '../polyfill.js';
 import { directive, isNodePart } from '@popeindustries/lit-html';
 
 export const customElementRender = directive(customElementRenderDirective);
