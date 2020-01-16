@@ -1,6 +1,6 @@
 {
   "name": "@popeindustries/lit-element",
-  "version": "1.0.2",
+  "version": "2.0.0-beta.1",
   "description": "Seamlessly render lit-element custom elements on the server and in the browser",
   "keywords": [
     "custom elements",
@@ -24,27 +24,27 @@
   "author": "Alexander Pope <alex@pope-industries.com>",
   "license": "MIT",
   "dependencies": {
-    "@popeindustries/lit-html": "^1.0.0"
+    "@popeindustries/lit-html": "^2.0.0-beta.1"
   },
   "peerDependencies": {
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "@popeindustries/lit-html-server": "^1.3.1",
+    "@popeindustries/lit-html-server": "^2.0.0",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "chai": "^4.2.0",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "esm": "^3.2.25",
-    "husky": "^3.0.2",
-    "lint-staged": "^9.2.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
     "lit-element": "^2.2.1",
-    "mocha": "^6.2.0",
-    "prettier": "^1.17.1",
-    "rollup": "^1.21.4",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rollup": "^1.29.0"
   },
   "engines": {
     "node": ">=10"
