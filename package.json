@@ -1,6 +1,6 @@
 {
   "name": "@popeindustries/lit-element",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "Seamlessly render lit-element custom elements on the server and in the browser",
   "keywords": [
     "custom elements",
@@ -24,13 +24,13 @@
   "author": "Alexander Pope <alex@pope-industries.com>",
   "license": "MIT",
   "dependencies": {
-    "@popeindustries/lit-html": "^2.0.0-beta.1"
+    "@popeindustries/lit-html": "^2.0.0-beta.2"
   },
   "peerDependencies": {
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "@popeindustries/lit-html-server": "^2.0.0-beta.1",
+    "@popeindustries/lit-html-server": "^2.0.0-beta.2",
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "babel-eslint": "^10.0.1",
