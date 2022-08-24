@@ -1,5 +1,5 @@
-[![NPM Version](https://img.shields.io/npm/v/@popeindustries/lit-element.svg?style=flat)](https://npmjs.org/package/@popeindustries/lit-element)
-[![Build Status](https://img.shields.io/travis/popeindustries/lit-element.svg?style=flat)](https://travis-ci.org/popeindustries/lit-element)
+> **Warning**
+> Moved to the [`@popeindustries/lit`](https://github.com/popeindustries/lit) repo
 
 # @popeindustries/lit-element
 
